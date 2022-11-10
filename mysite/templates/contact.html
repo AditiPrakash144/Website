@@ -56,6 +56,8 @@
                             <a class="text-white px-3" href="">Help</a>
                             <span class="text-white">|</span>
                             <a class="text-white pl-3" href="">Support</a>
+                            <span class="text-white">|</span>
+                            <a class="text-white pl-3" href="feedback">FeedBack</a>
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-lg-right">
@@ -104,8 +106,7 @@
                                 <div class="dropdown-menu rounded-0 m-0">
                                     <a href="{% url 'blog' %}" class="dropdown-item">Blog Grid</a>
                                     <a href="{% url 'single' %}" class="dropdown-item">Blog Detail</a>
-                                    <a href="{% url 'doc' %}" class="dropdown-item">FeedBack Form</a>
-
+                                   
                                 </div>
                             </div>
                             <a href="{% url 'contact' %}" class="nav-item nav-link active">Contact</a>
@@ -144,12 +145,15 @@
                         <div class="d-inline-flex text-left">
                             <h1 class="flaticon-email font-weight-normal text-primary m-0 mr-3"></h1>
                             <div class="d-flex flex-column">
-                                <h5>Email Us</h5>
-                                <p class="m-0">koliyukta01@gmail.com</p>
-                                <p class="m-0">pdaffy0@gmail.com</p>
-                                <p class="m-0">vaibhavbhoir37819@gmail.com</p>
-                                <p class="m-0">aditi.ppk@gmail.com</p>
-                                <p class="m-0">kjrajadnya@gmail.com</p>
+                                <select id = "myList" onchange = "favEmail()" >  
+                                    <option class="m-0">Email Us</option>  
+                                    <option class="m-0"> koliyukta01@gmail.com </option>  
+                                    <option class="m-0"> pdaffy0@gmail.com </option>  
+                                    <option class="m-0"> vaibhavbhoir37819@gmail.com </option>  
+                                    <option class="m-0"> aditi.ppk@gmail.com </option> 
+                                    <option class="m-0"> kjrajadnya@gmail.com</option> 
+                                </select>  
+
 
 
                             </div>
@@ -159,14 +163,15 @@
                         <div class="d-inline-flex text-left">
                             <h1 class="flaticon-telephone font-weight-normal text-primary m-0 mr-3"></h1>
                             <div class="d-flex flex-column">
-                                <h5>Call Us</h5>
-                                <p class="m-0">+91-9702113232</p>
-                                <p class="m-0">+91-9920578215</p>
-                                <p class="m-0">+91-7057454136</p>
-                                <p class="m-0">+91-8850966471</p>
-                                <p class="m-0">+91-9833237889</p>
-
-
+                            <select id = "myList" onchange = "favContact()" > 
+                                <option>Call Us</option>
+                                <option class="m-0">+91-9702113232</option>
+                                <option class="m-0">+91-9920578215</option>
+                                <option class="m-0">+91-7057454136</option>
+                                <option class="m-0">+91-8850966471</option>
+                                <option class="m-0">+91-9833237889</option>
+                                
+                            </select>
                             </div>
                         </div>
                     </div>
